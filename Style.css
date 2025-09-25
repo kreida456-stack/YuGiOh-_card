@@ -127,8 +127,9 @@ h1 {
 }
 
 .card-title {
+    position: relative;
     width: 245px;
-    height: 35px;
+    height: 40px;
     padding: 0;
     margin: 0;
     font-size: 14px;
@@ -137,9 +138,12 @@ h1 {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.502);
     gap: 5px;
     z-index: 3;
+}
+
+.card-title h1 {
+    padding-bottom: 7px;
 }
 
 .light-icon {
@@ -152,6 +156,7 @@ h1 {
     box-shadow: inset 0 0 2px 2px rgb(255, 234, 0), inset -3px -2px 3px 5px rgb(0, 0, 0);
     color: white;
     align-items: center;
+    margin-bottom: 3px;
 }
 
 .light-icon p {
@@ -170,16 +175,14 @@ h1 {
 }
 
 .card-title-outer {
+    position: absolute;
     width: 245px;
-    height: 40px;
+    height: 35px;
     padding: 0;
     margin-bottom: 5px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    box-shadow: inset 3px 3px 2px rgba(255, 255, 255, 0.78);
-    /*filter: url('#grain');*/
+    box-shadow: inset 3px 3px 3px rgba(255, 255, 255, 0.724), 3px 3px 3px rgba(0, 0, 0, 0.737);
+    filter:blur(1px);
+    z-index: 2;
 }
 
 .star-border {
