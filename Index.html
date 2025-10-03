@@ -4,85 +4,94 @@
 
 <head>
     <title>Yu-Gi-Oh!</title>
-    <link rel="stylesheet" href="Style.css" />
+
+    <link rel="stylesheet" href="card_style.css" />
+    <script src="https://code.jquery.com/jquery-3.7.1.slim.js"
+        integrity="sha256-UgvvN8vBkgO0luPSUl2s8TIlOSYRoGFAX4jlCIm9Adc=" crossorigin="anonymous"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
     <div class="main">
-        <div class="card-border">
-            <div class="card-border-color"></div>
-            <div class="card-color"></div>
-            <div class="card">
-                <div class="card-title-outer">
-                </div>
-                <div class="card-title">
-                    <h1>Blue-Eyes White Dragon</h1>
-                    <div class="light-icon">
-                        <p>LIGHT</p>
-                        <h1>光</h1>
+        <div class="card-wrapper">
+            <div class="card-border active">
+                <div class="card-border-color"></div>
+                <div class="card-color"></div>
+                <div class="card">
+                    <div class="card-title-outer">
                     </div>
-                </div>
-                <div class="image-frame"></div>
-                <div class="stars">
-                    <div class="star-border">
-                        <div class="star"></div>
+                    <div class="card-title">
+                        <h1>Blue-Eyes White Dragon</h1>
+                        <div class="light-icon">
+                            <p>LIGHT</p>
+                            <h1>光</h1>
+                        </div>
                     </div>
-                    <div class="star-border">
-                        <div class="star"></div>
+                    <div class="image-frame"></div>
+                    <div class="stars">
+                        <div class="star-border">
+                            <div class="star"></div>
+                        </div>
+                        <div class="star-border">
+                            <div class="star"></div>
+                        </div>
+                        <div class="star-border">
+                            <div class="star"></div>
+                        </div>
+                        <div class="star-border">
+                            <div class="star"></div>
+                        </div>
+                        <div class="star-border">
+                            <div class="star"></div>
+                        </div>
+                        <div class="star-border">
+                            <div class="star"></div>
+                        </div>
+                        <div class="star-border">
+                            <div class="star"></div>
+                        </div>
+                        <div class="star-border">
+                            <div class="star"></div>
+                        </div>
                     </div>
-                    <div class="star-border">
-                        <div class="star"></div>
+                    <div class="picture">
+                        <img src="/Assets/blue-eyes-white-dragon.jpeg">
                     </div>
-                    <div class="star-border">
-                        <div class="star"></div>
+                    <div class="sub-text-one">
+                        <p class="edition">1<sup>st</sup> Edition</p>
+                        <p class="code">DPKB-EN001</p>
                     </div>
-                    <div class="star-border">
-                        <div class="star"></div>
-                    </div>
-                    <div class="star-border">
-                        <div class="star"></div>
-                    </div>
-                    <div class="star-border">
-                        <div class="star"></div>
-                    </div>
-                    <div class="star-border">
-                        <div class="star"></div>
-                    </div>
-                </div>
-                <div class="picture">
-                    <img src="/Assets/blue-eyes-white-dragon.jpeg">
-                </div>
-                <div class="sub-text-one">
-                    <p class="edition">1<sup>st</sup> Edition</p>
-                    <p class="code">DPKB-EN001</p>
-                </div>
-                <div class="card-description">
-                    <div class="card-description-border">
-                        <div class="square-border square-topright"></div>
-                        <div class="square-border square-topleft""></div>
+                    <div class="card-description">
+                        <div class="card-description-border">
+                            <div class="square-border square-topright"></div>
+                            <div class="square-border square-topleft""></div>
                         <div class=" square-border square-bottomright""></div>
-                        <div class="square-border square-bottomleft""></div>
+                            <div class="square-border square-bottomleft""></div>
                     </div>
                     <div class=" monster-type">
-                            <h2>[</h2>
-                            <h1>Dragon</h1>
-                            <h2>]</h2>
+                                <h2>[</h2>
+                                <h1>Dragon</h1>
+                                <h2>]</h2>
+                            </div>
+                            <p>This legendary dragon is a powerful engine of destruction. Virtually invincible, very few
+                                have
+                                faced this
+                                awesome creature and lived to tell the tale.</p>
+                            <h1>ATK/3000 DEF/2500</h1>
                         </div>
-                        <p>This legendary dragon is a powerful engine of destruction. Virtually invincible, very few
-                            have
-                            faced this
-                            awesome creature and lived to tell the tale.</p>
-                        <h1>ATK/3000 DEF/2500</h1>
+                        <div class="sub-text-two">
+                            <p class="id">89631139</p>
+                            <p class="company">© 1996 KAZUKI TAKAHASHI</p>
+                            <div class="square"></div>
+                        </div>
+
                     </div>
-                    <div class="sub-text-two">
-                        <p class="id">89631139</p>
-                        <p class="company">© 1996 KAZUKI TAKAHASHI</p>
-                        <div class="square"></div>
-                    </div>
+                    <div class="card_glare"></div>
+                    <div class="card_shine"></div>
                 </div>
             </div>
         </div>
+        <style class="hover"></style>
         <svg height="0">
             <filter id="fluffy-inner" x="0%" y="0%" width="100%" height="100%">
                 <feTurbulence type="fractalNoise" baseFrequency="0.04" result="fluffyNoise" numOctaves="5" />
@@ -110,10 +119,7 @@
                 <feBlend in="SourceGraphic" in2="monoNoise" mode="multiply" />
             </filter>
         </svg>
+        <script src="Main.js"></script>
 </body>
-
-<svg>
-
-</svg>
 
 </html>
