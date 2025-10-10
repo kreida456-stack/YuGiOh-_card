@@ -3,6 +3,7 @@
 var x;
 var $card = $(".card-border");
 var $style = $(".hover");
+var $glare = $(".circle-glare");
 
 
 $card
@@ -27,7 +28,7 @@ $card
     var tp = (50+(py - 50)/1.5);
     var px_spark = (50+(px - 50)/7);
     var py_spark = (50+(py - 50)/7);
-    var p_opc = 20+(Math.abs(pa)*1.5);
+    var p_opc = 50+(Math.abs(pa)*1.5);
     var ty = ((tp - 50)/1.5) * -1;
     var tx = ((lp - 50)/1.5) * 1;
     // css to apply for active card
@@ -48,6 +49,11 @@ $card
       return false; 
     }
     clearTimeout(x);
+
+    var newposX = l - 160;
+    var newposY = t - 50;
+    $(".circle-glare").css("transform","translate3d("+newposX+"px,"+newposY+"px,0px)");
+
   }).on("mouseout touchend touchcancel", function() {
     // remove css, apply custom animation on end
     var $card = $(this);
